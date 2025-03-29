@@ -26,7 +26,6 @@
         <img src="{{ $product['image'] }}" alt="">
         <p>{{ $product['name'] }}</p>
         <p>{{ $product['price'] }}</p>
-        <!-- 値段挿入予定 -->
         </form>
     </td>
 </tr>
