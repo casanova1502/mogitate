@@ -19,4 +19,17 @@
         <option value=""></option>
     </select>
 </form>
+@foreach ($products as $product)
+<tr>
+    <td>
+        <form action="/products/{productId}" method="get">
+        <img src="{{ $product['image'] }}" alt="">
+        <p>{{ $product['name'] }}</p>
+        <p>{{ $product['price'] }}</p>
+        <!-- 値段挿入予定 -->
+        </form>
+    </td>
+</tr>
+@endforeach
+
 @endsection

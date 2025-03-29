@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MogitateController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,10 @@ use App\Http\Controllers\MogitateController;
 |
 */
 
-Route::get('/products', [MogitateController::class, 'index']);
-Route::post('/products/search', [MogitateController::class, 'search']);
-Route::post('/products/register', [MogitateController::class, 'register']);
-Route::post('/products', [MogitateController::class, 'store']);
+Route::get('/products', [ProductController::class, 'index']);
+Route::post('/products/search', [ProductController::class, 'search']);
+Route::post('/products/register', [ProductController::class, 'register']);
+Route::get('/products/{productId}', [ProductController::class, '']);
+Route::post('/products', [ProductController::class, 'store']);
+Route::patch('/products/{productId}/update', [ProductController::class, 'update']);
+Route::patch('/products/{productId}/update', [SeasonController::class, 'update']);

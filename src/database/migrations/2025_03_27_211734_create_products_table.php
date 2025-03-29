@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('price');
-            $table->string('image');
+            $table->binary('image');
             $table->text('description');
             $table->timestamps();
         });
@@ -31,5 +31,11 @@ class CreateProductsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('products');
+        // Schema::table('products',function (Blueprint $table){
+            // $table->dropForeign('products_season_id_foreign');
+            // $table->dropColumn('product_id','season_id');
+        //     $table->dropForeign('products_season_id');
+        //     $table->dropColumn('product_id','season_id');
+        // });
     }
 }
