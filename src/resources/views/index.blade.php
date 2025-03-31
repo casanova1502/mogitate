@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<form action="/products/register" method="post">
+<form action="/products/register" method="get">
     @csrf
     <h1>商品紹介</h1>
     <button type="submit">+ 商品を追加</button>
