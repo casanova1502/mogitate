@@ -1,0 +1,28 @@
+.header__inner{
+    width: 1512;
+    height: 53;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    gap: 10px;
+    border-bottom-width: 1px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #F4F4F4
+}
+
+.header__logo{
+    width: 112;
+    height: 33;
+    font-family: jsMath-cmti10;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F5C800;    
+}
+
+.main{
+    background:#F8F8F8
+}

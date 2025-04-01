@@ -17,28 +17,6 @@
     color: #333333;
 }
 
-.mogitate__title__register{
-    display: flex;
-    justify-content: space-between
-}
-
-.mogitate__title__register__button{
-    width: 137;
-    height: 50;
-    padding-top: 13px;
-    padding-right: 20px;
-    padding-bottom: 13px;
-    padding-left: 20px;
-    gap: 10px;
-    border-radius: 5px;
-    background: #FFA929;
-    box-shadow: 0px 4px 10px 0px #0000001A;
-}
-
-.search__sort__product{
-    display: flex;
-}
-
 .search__sort{
     display:flex;
     flex-direction: column;
@@ -101,13 +79,6 @@
     border-width: 1px;
     background: #FFFFFF;
     border: 1px solid #E0DFDE
-}
-
-.mogitate__product{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
 }
 
 .mogitate__product__table{

@@ -17,8 +17,10 @@ use App\Http\Controllers\ProductController;
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/register', [ProductController::class, 'create']);
 Route::post('/products', [ProductController::class, 'store']);
-
 Route::post('/products/search', [ProductController::class, 'search']);
 Route::get('/products/{productId}', [ProductController::class, '']);
+Route::get('/products/{productsId}/update',[ProductController::class, 'edit'])->name('products.edit');
 Route::patch('/products/{productId}/update', [ProductController::class, 'update']);
-Route::patch('/products/{productId}/update', [SeasonController::class, 'update']);
+Route::delete('/products/{productId}/delete', [ProductController::class, 'destroy']);
+Route::get('/search', [ProductController::class, 'find']);
+Route::post('/search', [ProductController::class, 'search']);
